@@ -19,10 +19,10 @@ requires:
   Exporter: 0
   Net::HTTP::Tiny: 0
   parent: 0
-  perl: 5.006
+  perl: 5.008
   strict: 0
   warnings: 0
 resources:
   homepage: https://github.com/neilbowers/CPAN-Testers-Reports-Counts
   repository: https://github.com/neilbowers/CPAN-Testers-Reports-Counts.git
-version: 0.01
+version: 0.02
