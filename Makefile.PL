@@ -28,11 +28,10 @@ my %WriteMakefileArgs = (
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
-    "LWP::Online" => 0,
     "Test::More" => "0.88",
-    "utf8" => 0
+    "lib" => 0
   },
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -41,12 +40,11 @@ my %WriteMakefileArgs = (
 
 my %FallbackPrereqs = (
   "Exporter" => 0,
-  "LWP::Online" => 0,
   "Net::HTTP::Tiny" => 0,
   "Test::More" => "0.88",
+  "lib" => 0,
   "parent" => 0,
   "strict" => 0,
-  "utf8" => 0,
   "warnings" => 0
 );
 

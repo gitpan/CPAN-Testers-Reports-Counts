@@ -1,6 +1,6 @@
 package CPAN::Testers::Reports::Counts;
 {
-  $CPAN::Testers::Reports::Counts::VERSION = '0.02';
+  $CPAN::Testers::Reports::Counts::VERSION = '0.03';
 }
 # ABSTRACT: counts of CPAN Testers reports by month or year
 use strict;

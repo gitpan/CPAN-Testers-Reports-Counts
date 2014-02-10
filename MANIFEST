@@ -10,3 +10,4 @@ lib/CPAN/Testers/Reports/Counts.pm
 t/01-require.t
 t/02-by-month.t
 t/03-by-year.t
+t/lib/CPAN/Testers/Reports/Counts/TestWrapper.pm
