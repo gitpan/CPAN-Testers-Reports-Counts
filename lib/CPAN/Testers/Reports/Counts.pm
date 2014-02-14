@@ -1,7 +1,5 @@
 package CPAN::Testers::Reports::Counts;
-{
-  $CPAN::Testers::Reports::Counts::VERSION = '0.03';
-}
+$CPAN::Testers::Reports::Counts::VERSION = '0.04';
 # ABSTRACT: counts of CPAN Testers reports by month or year
 use strict;
 use warnings;
@@ -66,15 +64,15 @@ sub _lock_data
 
 sub reports_counts_by_month
 {
+    _initialise() if not defined($reports_by_month);
     return $reports_by_month;
 }
 
 sub reports_counts_by_year
 {
+    _initialise() if not defined($reports_by_year);
     return $reports_by_year;
 }
-
-_initialise();
 
 1;
 
@@ -145,6 +143,12 @@ have been submitted. The months are in the format 'YYYY-MM'.
  use CPAN::Testers::Reports::Counts 'reports_counts_by_month';
  $counts = reports_counts_by_month();
  print "Dec 2013 = $counts->{'2013-12'}->{REPORTS}\n";
+
+=head1 SEE ALSO
+
+L<CPAN Testers Statistics|http://stats.cpantesters.org>,
+L<CPAN Testers wiki|http://wiki.cpantesters.org/wiki/Reports>.
+L<CPAN::Testers::Data::Generator> - a module used to download and summarize CPAN Testers data.
 
 =head1 REPOSITORY
 
